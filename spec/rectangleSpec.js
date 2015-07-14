@@ -15,9 +15,19 @@ describe("Rectangle", function() {
 
   describe("Perimeter", function() {
     it("should be 20 for a square with side lengths 4,6", function() {
-      expect(rectangle.area()).toEqual(20);
+      expect(rectangle.perimeter()).toEqual(20);
     });
   });
 
-  // Write more specs!!
+  describe("To String", function() {
+    it("should list shape sides and color", function() {
+      expect(rectangle.string()).toEqual( "[Shape sides:4, color:blue ]");
+    });
+  });
+
+  describe("Draw", function() {
+    it("should tell you to draw a shape with n sides", function() {
+      expect(rectangle.drawThis()).toEqual("A shape with 4 sides");
+    });
+  });
 });

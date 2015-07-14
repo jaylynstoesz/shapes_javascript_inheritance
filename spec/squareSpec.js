@@ -15,9 +15,20 @@ describe("Square", function() {
 
   describe("Perimeter", function() {
     it("should be 8 for a square with side length 2", function() {
-      expect(square.area()).toEqual(8);
+      expect(square.perimeter()).toEqual(8);
     });
   });
 
-  // Write more specs!!
+  describe("To String", function() {
+    it("should list shape sides and color", function() {
+      expect(square.string()).toEqual( "[Shape sides:4, color:red ]");
+    });
+  });
+
+  describe("Draw", function() {
+    it("should tell you to draw a shape with n sides", function() {
+      expect(square.drawThis()).toEqual("A shape with 4 sides");
+    });
+  });
+
 });
